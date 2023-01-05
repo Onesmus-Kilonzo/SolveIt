@@ -14,16 +14,21 @@
             ul {list-style-type:none;  
             padding:0;  
             
-            width: 72%;
+            
             overflow:hidden;
-            position:fixed;
+            font-family: serif;
+            
             
             top:0;
             left:0;
             font-size:20px;
             margin:0;
+            background-color: white;
+
             }
-         a {display:block; text-decoration:none; color:black; padding:1vw 1vw; }
+         a {display:block; text-decoration:none; color:black; padding:10px;
+         
+          }
             li a:hover {background-color:#91d412;}
            .active {background-color:#91d412;}
            li {float:left;  
@@ -32,28 +37,34 @@
            padding:1vw 1vw;
            
            overflow:scroll;}
-         .dropdown {color:black;}
+         .dropdown {color:black;
+            background-color: white;}
         .content {display:none;}
        .dropdown:hover .content{
            display:block;
+           background-color: white;
        } 
        body {
        background-image: url("image4.jpg");
        color:black;
        background-repeat:repeat;}
-      h1 {position:fixed;
+      h1 {
+        position: relative;
       top:0px;
-      left: 80%;
+      right: 40%;
       text-align:center;
-      /**background-color:white;**/
+      background-color:white;
       margin:0;
-      padding:0; 
-      font-size:4vw;
+      padding:5px; 
+      
+      font-size:25x;
       float:right;
       color:#a8e727;
+      font-family: 'Lucida Handwriting';
+      
      }
      .imageholder {position: relative; 
-        top:0;
+        top:45px;
         left: 0;
         
         z-index: -2;
@@ -69,6 +80,14 @@
         #person {top: 400px;}
         #cube {top: 400px; 
             left: 50%;}
+     .top {background-color: white;
+        position: fixed;
+        top: 0;
+        left: 7px;
+        right:8px;
+        width: 100%;
+        height: 45px;
+    }
 
       
           
@@ -86,7 +105,7 @@
     </head>
     <body>
     <div class="top">  
-            <h1 class="logo">SolveIt</h1>
+            <h1 class="logo">Welcome To SolveIt</h1>
             
         
         
@@ -95,7 +114,7 @@
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Contacts">Contacts</a></li> 
-            <li class="article"><div class="dropdown"><span>Articles</span>
+            <!--<li class="article"><div class="dropdown"><span>Articles</span>
             <div class="content">
                 <a href="#">Env</a>
                 <a href="#">Tech</a>
@@ -104,7 +123,7 @@
                 <a href="#">Soc</a>
                 
             </div>
-            </div></li>
+            </div></li>-->
             </ul>
     </div>
 
